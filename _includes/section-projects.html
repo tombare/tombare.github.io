@@ -74,19 +74,35 @@
           </div>
           <p class="project-desc">{{repository.description}}</p>
           {% if repository.homepage != "" and repository.homepage != nil %}
-            <div class="landing-icons" style="justify-content: right">
-              <a class="social-link telegram" aria-label="Website" target="_blank"
-              rel="noreferrer" href="{{repository.homepage}}">
-                <svg viewBox="0 0 200 200" class="circle">
-                  <circle cx="100" cy="100" r="80" />
-                </svg>
-                <div class="social">
-                  <svg class="social-svg" viewBox="0 0 24 24">
-                    <use x="6" y="6" width="12" height="12" viewBox="0 0 24 24" xlink:href="{{ '/assets/img/solid.svg#globe' | prepend: site.baseurl }}"></use>
+              {% if repository.name contains 'store' %}
+              <div class="landing-icons" style="justify-content: right">
+                <a class="social-link instagram" aria-label="My Store" target="_blank"
+                rel="noreferrer" href="{{repository.homepage}}">
+                  <svg viewBox="0 0 200 200" class="circle">
+                    <circle cx="100" cy="100" r="80" />
                   </svg>
-                </div>
-              </a>
-            </div>
+                  <div class="social">
+                    <svg class="social-svg" viewBox="3 5 32 40">
+                      <use x="6" y="6" width="24" height="24" viewBox="0 0 24 24" xlink:href="{{ '/assets/img/Logo.svg#logo' | prepend: site.baseurl }}"></use>
+                    </svg>
+                  </div>
+                </a>
+              </div>
+              {% else %}
+              <div class="landing-icons" style="justify-content: right">
+                <a class="social-link telegram" aria-label="Website" target="_blank"
+                rel="noreferrer" href="{{repository.homepage}}">
+                  <svg viewBox="0 0 200 200" class="circle">
+                    <circle cx="100" cy="100" r="80" />
+                  </svg>
+                  <div class="social">
+                    <svg class="social-svg" viewBox="0 0 24 24">
+                      <use x="6" y="6" width="12" height="12" viewBox="0 0 24 24" xlink:href="{{ '/assets/img/solid.svg#globe' | prepend: site.baseurl }}"></use>
+                    </svg>
+                  </div>
+                </a>
+              </div>
+              {% endif %}
           {% endif %}
           <a class="highlight-link" href="{{repository.html_url}}" target="_blank" rel="noreferrer">
             GitHub
