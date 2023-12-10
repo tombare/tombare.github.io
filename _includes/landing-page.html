@@ -54,6 +54,21 @@
       </a>
       {% endif %}
 
+      {% if site.personal_store != null %}
+      <a class="social-link instagram" aria-label="My Store" target="_blank" rel="noreferrer"
+         href="{{site.personal_store}}">
+        <svg viewBox="0 0 200 200" class="circle">
+          <circle cx="100" cy="100" r="80" />
+        </svg>
+        <div class="social">
+          <svg class="social-svg" viewBox="3 5 32 40">
+            <use x="12" y="12" width="24" height="24" xlink:href="{{ '/assets/img/Logo.svg#logo' | prepend: site.baseurl }}"></use>
+          </svg>
+        </div>
+        <span class="label">Store</span>
+      </a>
+      {% endif %}
+
       {% if site.github_username != null %}
       <a class="social-link github" aria-label="My GitHub" target="_blank" rel="noreferrer"
          href="https://github.com/{{site.github_username}}">
@@ -81,21 +96,6 @@
           </svg>
         </div>
         <span class="label">Viber</span>
-      </a>
-      {% endif %}
-
-      {% if site.personal_store != null %}
-      <a class="social-link instagram" aria-label="My Store" target="_blank" rel="noreferrer"
-         href="{{site.personal_store}}">
-        <svg viewBox="0 0 200 200" class="circle">
-          <circle cx="100" cy="100" r="80" />
-        </svg>
-        <div class="social">
-          <svg class="social-svg" viewBox="0 0 48 48">
-            <use x="12" y="12" width="24" height="24" xlink:href="{{ '/assets/img/Logo.svg#logo' | prepend: site.baseurl }}"></use>
-          </svg>
-        </div>
-        <span class="label">Store</span>
       </a>
       {% endif %}
 
