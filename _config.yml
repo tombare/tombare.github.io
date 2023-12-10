@@ -8,10 +8,11 @@ typing_text: Software Engineer / QA Tester
 email: davit.kobalia.1@btu.edu.ge
 telegram_username: in_solitum
 linkedin_username: dkobalia
-github_username: insolitum
+github_username: tombare
 facebook_username: DaWeedGone
-instagram_username: __m.artian__
+instagram_username: insol1tum
 viber_number: 995599014780
+personal_store: https://www.example.com
 
 show_aboutme_card: false
 about_me_title: About Me
@@ -34,11 +35,11 @@ show_contact_card: true
 contact_title: Contacts
 contact_description: Feel free to contact me wherever is comfortable for you
 
-repository: insolitum/insolitum.github.io
+repository: tombare/tombare.github.io
 github_pages:
   - sorting_algos
   - character_encoder
-  - insolitum.github.io
+  - tombare.github.io
   
 projects:
   sort_by: stars
@@ -46,7 +47,7 @@ projects:
     archived: true
     forks: true
     projects:
-      - insolitum
+      - tombare
 
 plugins:
   - "jekyll-github-metadata"
