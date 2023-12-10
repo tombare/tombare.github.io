@@ -38,7 +38,6 @@ contact_description: Feel free to contact me wherever is comfortable for you
 repository: tombare/tombare.github.io
 github_pages:
   - sorting_algos
-  - character_encoder
   - tombare.github.io
   
 projects:

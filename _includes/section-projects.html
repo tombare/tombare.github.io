@@ -92,6 +92,21 @@
             </a>
           </div>
           {% endif %}
+          {% if repository.name contains 'store' %}
+          <div class="landing-icons" style="justify-content: right">
+            <a class="social-link telegram" aria-label="Website" target="_blank"
+            rel="noreferrer" href="{{site.personal_store}}">
+              <svg viewBox="0 0 200 200" class="circle">
+                <circle cx="100" cy="100" r="80" />
+              </svg>
+              <div class="social">
+                <svg class="social-svg" viewBox="0 0 24 24">
+                  <use x="6" y="6" width="12" height="12" viewBox="0 0 24 24" xlink:href="{{ '/assets/img/solid.svg#globe' | prepend: site.baseurl }}"></use>
+                </svg>
+              </div>
+            </a>
+          </div>
+          {% endif %}
           {% if repository.topics %}
             <div class="tag-wrapper">
               {% for topic in repository.topics %}
