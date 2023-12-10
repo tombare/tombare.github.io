@@ -47,7 +47,7 @@
       {% unless site.projects.exclude.projects contains repository.name %}
         <div class="project neumorphism-card" data-aos="zoom-in-down">
           <div class="name-link-wrapper">
-            <h3 style="color: white">{{ repository.name }}</h3>
+            <h3 class="highlight-title" style="color: white">{{ repository.name }}</h3>
             <div class="links">
               {% if repository.stargazers_count != 0 %}
                 <a href="{{ repository.html_url }}/stargazers" class="project-stars-forks">
